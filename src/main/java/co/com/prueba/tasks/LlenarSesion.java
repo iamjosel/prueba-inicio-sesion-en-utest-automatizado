@@ -25,6 +25,7 @@ public class LlenarSesion implements Task {
     public <T extends Actor> void performAs(T actor){
         actor.attemptsTo(Enter.theValue(datos.get(0).getStrUsuario()).into(InicioSesion.INGRESE_USUARIO),
                 Enter.theValue(datos.get(0).getStrClave()).into(InicioSesion.INGRESE_CLAVE),
+                Click.on(InicioSesion.RECUERDAME),
                 Click.on(InicioSesion.BOTON_INGRESO));
 
     }

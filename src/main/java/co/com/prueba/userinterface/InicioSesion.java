@@ -8,7 +8,10 @@ public class InicioSesion {
             .located(By.id("username"));
     public static final Target INGRESE_CLAVE = Target.the("Ingrese su clave")
             .located(By.id("password"));
+    public static final Target RECUERDAME = Target.the("Recuerda mi usuario")
+            .located(By.id("rememberMe"));
     public static final Target BOTON_INGRESO = Target.the("Botón de ingreso")
             .located(By.id("kc-login"));
+
 }
 
